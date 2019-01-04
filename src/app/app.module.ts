@@ -54,7 +54,7 @@ import { environment } from '../environments/environment';
     HotkeyModule.forRoot(),
     AppRoutingModule,
     SweetAlert2Module.forRoot(),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production })
   ],
   declarations: [
     AppComponent,
